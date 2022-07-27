@@ -78,6 +78,9 @@ include 'header.php';
 
 <body>
 
+<!-- Back to top button -->
+<a id="button"></a>
+
 
 
 
@@ -173,6 +176,14 @@ include 'header.php';
     // }
     if($queryResult > 0){
         while ($row = mysqli_fetch_assoc($result)){
+            // echo "<a href = '".$row['a_id'].".php'><div class='search-box'>
+            // <br>
+            // <h4>".$row['a_title']."</h4>
+            // <p>".$row['a_text']."</p>
+            // <p>".$row['a_date']."</p>
+            // <p>".$row['a_author']."</p>
+            // </div></a>";
+
             echo "<a href = '".$row['a_id'].".php'><div class='search-box'>
             <br>
             <h4>".$row['a_title']."</h4>

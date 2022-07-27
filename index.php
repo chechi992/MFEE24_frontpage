@@ -16,6 +16,7 @@ include 'header.php';
     <link type="text/css" rel="stylesheet" href="css/loading.css" />
     <link type="text/css" rel="stylesheet" href="../dist/mmenu.css" />
     <link type="text/css" rel="stylesheet" href="./buttonn.css" />
+    <link type="text/css" rel="stylesheet" href="css/backtotop.css" />
 
     
     <!-- icon -->
@@ -79,7 +80,24 @@ include 'header.php';
     場地格局設置滿版 
     多設計一個scroll down button?
 -->
+<a id="button"></a>
+<script>
+var btn = $('#button');
 
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+</script>
 
 <div id="frontpage">
         <div id="page">
@@ -329,21 +347,21 @@ include 'header.php';
                
                   <div class=" card text-center h-100 shadow-0 ">
                     <a href="#">
-                    <img src="img/p5.jpeg" class="card-img-top"
+                    <img src="img/ppic1.jpeg" class="card-img-top"
                         alt="Hollywood Sign on The Hill" />
                     <div class="card-body">
-                        <p class="fw-bold d-flex justify-content-center card-title">當季展覽</p>
+                        <p class="fw-bold d-flex justify-content-center card-title">當期展覽</p>
                         <h5 class=" d-flex justify-content-center mt-5 card-text ">
-                          覆寫真實 - 臺灣當代攝影中的檔案與認同
+                        腦內文物展 |<br> 陳亘瑋
                         </h5>
                         <p class="d-flex justify-content-center card-text">
-                            <small class="text-muted">220409 - 220703</small>
+                            <small class="text-muted">210215 - 210230</small>
                         </p>
                         <!-- <input type="button" onclick="project(this)"
                             class="mx-4 mt-4 button btn btn-default " value="了解更多"> -->
                             
                             <div class="card-footer">
-                              <small class="text-muted ">| A展區 |</small>
+                              <small class="text-muted ">| A空間 |</small>
                             </div>
                     </div>
                 </div>
@@ -352,21 +370,21 @@ include 'header.php';
                 <div class="justify-content-center col-sm-7 col-md-6 col-lg-3">
                     <div class=" card text-center h-100 shadow-0 ">
                       <a href="#">
-                        <img src="img/p3.jpeg" class="card-img-top"
+                        <img src="img/ppic2.jpeg" class="card-img-top"
                             alt="Hollywood Sign on The Hill" />
                         <div class="card-body">
-                            <p class="fw-bold d-flex justify-content-center card-title">當季展覽</p>
+                            <p class="fw-bold d-flex justify-content-center card-title">當期展覽</p>
                             <h5 style ="word-break: break-all;" class=" d-flex justify-content-center mt-5 card-text ">
-                              島嶼溯遊－『台灣計劃』三十年回顧展
+                            Northern Icons |⁣<br>   Kvadrat⁣ 
                             </h5>
                             <p class="d-flex justify-content-center card-text">
-                                <small class="text-muted">220326 - 220626</small>
+                                <small class="text-muted">210305 - 210415</small>
                             </p>
                             <!-- <input type="button" onclick="project(this)"
                                 class="mx-4 mt-4 button btn btn-default " value="了解更多"> -->
                                 
                                 <div class="card-footer">
-                                  <small class="text-muted ">| B展區 |</small>
+                                  <small class="text-muted ">| B空間 |</small>
                                 </div>
                         </div>
                     </div>
@@ -375,22 +393,21 @@ include 'header.php';
                 <div class="justify-content-center col-sm-7 col-md-6 col-lg-3">
                   <div class=" card text-center h-100 shadow-0 ">
                     <a href="#">
-                      <img src="img/p10.jpeg" class="card-img-top"
+                      <img src="img/ppic3.jpeg" class="card-img-top"
                           alt="Hollywood Sign on The Hill" />
                       <div class="card-body">
                           <p class="fw-bold d-flex justify-content-center card-title">常設展覽</p>
                           <h5 class=" d-flex justify-content-center mt-5 card-text ">
-                            跨‧交‧通
-                              | 「大阪商船株式會社臺北支店」攝影展
+                          賦 |<br>  袁旃個展  
                           </h5>
                           <p class="d-flex justify-content-center card-text">
-                              <small class="text-muted">210325</small>
+                              <small class="text-muted">210315 - 210510</small>
                           </p>
                           <!-- <input type="button" onclick="project(this)"
                               class="mx-4 mt-4 button btn btn-default " value="了解更多"> -->
                               
                               <div class="card-footer">
-                                <small class="text-muted ">| C展區 |</small>
+                                <small class="text-muted ">| C空間 |</small>
                               </div>
                       </div>
                   </div>
@@ -399,21 +416,21 @@ include 'header.php';
                   <div class="justify-content-center col-sm-7 col-md-6 col-lg-3">
                     <div class=" card text-center h-100 shadow-0 ">
                       <a href="#">
-                        <img src="img/p1.jpeg" class="card-img-top"
+                        <img src="img/ppic4.jpeg" class="card-img-top"
                             alt="Hollywood Sign on The Hill" />
                         <div class="card-body">
-                            <p class="fw-bold d-flex justify-content-center card-title">當季展覽</p>
+                            <p class="fw-bold d-flex justify-content-center card-title">當期展覽</p>
                             <h5 class=" d-flex justify-content-center mt-5 card-text ">
-                              揭幕 - 尋探立陶宛攝影中的認同
+                            林月霞 | <br>19622018
                             </h5>
                             <p class="d-flex justify-content-center card-text">
-                                <small class="text-muted">220501-220531</small>
+                                <small class="text-muted">210430 - 210510</small>
                             </p>
                             <!-- <input type="button" onclick="project(this)"
                                 class="mx-4 mt-4 button btn btn-default " value="了解更多"> -->
                                 
                                 <div class="card-footer">
-                                  <small class="text-muted ">| A展區 |</small>
+                                  <small class="text-muted ">| A空間 |</small>
                                 </div>
                         </div>
                     </div>
@@ -474,7 +491,8 @@ background-repeat: no-repeat;
 <div class="row justify-content-center">
 <div class="col-md-6 ">
 <span class="float-md-end mb-3 ms-md-3">
-  <img src="img/螢幕擷取畫面 (43).png" class="img-fluid" alt="Wild Landscape" />
+  <!-- <img src="img/螢幕擷取畫面 (43).png" class="img-fluid" alt="Wild Landscape" /> -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.556409097462!2d121.51986251456346!3d25.04912378396527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a96e50850aa9%3A0x3f3386c5e17b6e7b!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDkuK3lsbHljJfot6_kuIDmrrU1M-W3tzbomZ8!5e0!3m2!1szh-TW!2stw!4v1657766701856!5m2!1szh-TW!2stw" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </span>
 
 </div>
@@ -548,7 +566,9 @@ service@veneu.tw</p>
 </div>
 
 <!-- loading頁 -->
-<div id="loading"></div>
+<div id="loading">
+<div class="sp sp-sphere"></div>
+</div>
 
 
             <!-- 頁尾 -->
@@ -561,7 +581,7 @@ service@veneu.tw</p>
                             <a href="#">展場介紹</a>
                             <a href="#">展場申請</a>
                             <a href="#">展覽介紹</a>
-                            <a href="#"><img src="img/LOGO.png" alt="LOGO" width="70vh"></a>
+                            <a href="#"><img src="img/footer.png" alt="LOGO" width="70vh"></a>
                             <a  href="#">咖啡輕食</a>
                             <a href="#">網路商店</a>
                             <a  href="#">交通資訊</a>
